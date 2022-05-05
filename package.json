@@ -1,0 +1,18 @@
+{
+  "name": "virtual-keyboard",
+  "version": "1.0.0",
+  "description": "RSSchool task",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KATEPintoTheSunset/virtual-keyboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KATEPintoTheSunset/virtual-keyboard/issues"
+  },
+  "homepage": "https://github.com/KATEPintoTheSunset/virtual-keyboard#readme"
+}
