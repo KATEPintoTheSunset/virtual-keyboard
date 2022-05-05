@@ -1,1 +1,3 @@
-console.log('Hello Eslint there');
+import genDoc from './document-work/generate-document';
+
+document.addEventListener('DOMContentLoaded', () => genDoc(document));

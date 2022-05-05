@@ -1,0 +1,42 @@
+.user-input-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.user-input-storage {
+    margin: 20px 0px;
+    width: 1000px; 
+    height: 500px;
+    background-color: green;   
+}
+
+.keys-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.keys-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    width: 1000px; 
+    background-color: darkblue;   
+}
+
+.key {
+    width: 60px;
+    height: 50px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.backspace {
+    width: 120px;
+}
+
+.tab {
+    width: 80px;
+}
