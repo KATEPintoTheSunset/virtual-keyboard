@@ -594,6 +594,7 @@ export default [
         id: 93,
         classNames: ['key', 'control'],
         defaultValue: 'Control',
+        action: 'control',
         shiftValue: null,
         translates: null,
     },

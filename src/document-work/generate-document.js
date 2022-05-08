@@ -4,6 +4,7 @@ import { getLanguage, setLanguage } from './states';
 
 function genInputSection(inputContainer) {
     const inputStorage = elementFactory('textarea', ['user-input-storage']);
+    inputStorage.readOnly = true;
     inputContainer.appendChild(inputStorage);
     return inputStorage;
 }

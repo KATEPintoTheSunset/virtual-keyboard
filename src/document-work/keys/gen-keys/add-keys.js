@@ -35,6 +35,7 @@ export default function addKeysCallback(keysContainer, inputStorage) {
             switch (keyObject.action) {
                 case 'option':
                 case 'delete':
+                case 'control':
                     break;
                 case 'backspace':
                     backspaceAction(inputStorage);
@@ -54,11 +55,6 @@ export default function addKeysCallback(keysContainer, inputStorage) {
                     break;
                 }
                 case 'command':
-                case 'control': {
-                    add2CommandsSequence(keyObject.action);
-                    doAction(checkSequnce(getCommandsSequence()), keysContainer);
-                    break;
-                }
                 case 'space': {
                     add2CommandsSequence(keyObject.action);
                     doAction(checkSequnce(getCommandsSequence()), keysContainer);
