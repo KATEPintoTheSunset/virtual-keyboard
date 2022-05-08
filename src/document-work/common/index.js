@@ -1,6 +1,7 @@
-function elementFactory(type, classList){
+function elementFactory(type, classList, id){
     const anotherOneElement = document.createElement(type);
     anotherOneElement.classList.add(...classList);
+    anotherOneElement.id = id;
     return anotherOneElement;
 }
 

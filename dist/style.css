@@ -5,10 +5,17 @@
 }
 
 .user-input-storage {
+    padding: 10px;
     margin: 20px 0px;
     width: 1000px; 
     height: 500px;
-    background-color: green;   
+    font-size: 20px;
+    font-family: fantasy;
+    background-color: lightcyan;  
+    color: lightslategray;
+    border-radius: 15px;
+    border: 2px solid lightslategrey;
+    box-shadow: 0 0 5px rgba(119, 136, 153, 0.7); 
 }
 
 .keys-container {
@@ -48,7 +55,7 @@
     width: 120px;
 }
 
-.tab, .control, .delete {
+.tab, .control, .delete, .shift2 {
     width: 85px;
 }
 
@@ -68,6 +75,13 @@
     width: 80px;
 }
 
-.shift2 {
-    width: 85px;
+
+.down, .on {
+    background-color:powderblue;   
+    transition: 0.25;
+}
+
+textarea {
+    outline: none;
+	-moz-appearance: none;
 }

@@ -1,20 +1,20 @@
 const keys = [
     {
-        id: 0,
+        id: 192,
         classNames: ['key', 'tild'],
         defaultValue: '`',
         shiftValue: '~',
         translates: null
     },
     {
-        id: 1,
+        id: 49,
         classNames: ['key', 'number'],
         defaultValue: '1',
         shiftValue: '!',
         translates: null
     },
     {
-        id: 2,
+        id: 50,
         classNames: ['key', 'number'],
         defaultValue: '2',
         shiftValue: '@',
@@ -26,7 +26,7 @@ const keys = [
         }
     },
     {
-        id: 3,
+        id: 51,
         classNames: ['key', 'number'],
         defaultValue: '3',
         shiftValue: '#',
@@ -38,7 +38,7 @@ const keys = [
         }
     },
     {
-        id: 4,
+        id: 52,
         classNames: ['key', 'number'],
         defaultValue: '4',
         shiftValue: '$',
@@ -50,7 +50,7 @@ const keys = [
         }
     },
     {
-        id: 5,
+        id: 53,
         classNames: ['key', 'number'],
         defaultValue: '5',
         shiftValue: '%',
@@ -62,7 +62,7 @@ const keys = [
         }
     },
     {
-        id: 6,
+        id: 54,
         classNames: ['key', 'number'],
         defaultValue: '6',
         shiftValue: '^',
@@ -74,7 +74,7 @@ const keys = [
         }
     },
     {
-        id: 7,
+        id: 55,
         classNames: ['key', 'number'],
         defaultValue: '7',
         shiftValue: '&',
@@ -86,7 +86,7 @@ const keys = [
         }
     },
     {
-        id: 8,
+        id: 56,
         classNames: ['key', 'number'],
         defaultValue: '8',
         shiftValue: '*',
@@ -98,49 +98,51 @@ const keys = [
         }
     },
     {
-        id: 9,
+        id: 57,
         classNames: ['key', 'number'],
         defaultValue: '9',
         shiftValue: '(',
         translates: null
     },
     {
-        id: 10,
+        id: 48,
         classNames: ['key', 'number'],
         defaultValue: '0',
         shiftValue: '(',
         translates: null
     },
     {
-        id: 11,
+        id: 189,
         classNames: ['key', 'number'],
         defaultValue: '-',
         shiftValue: '_',
         translates: null
     },
     {
-        id: 12,
+        id: 187,
         classNames: ['key', 'number'],
         defaultValue: '=',
         shiftValue: '+',
         translates: null
     },
     {
-        id: 13,
+        id: 8,
         classNames: ['key', 'backspace'],
         defaultValue: 'Backspace',
+        action: 'backspace',
         shiftValue: null,
         translates: null
     },
     {
-        id: 14,
+        id: 9,
         classNames: ['key', 'tab'],
         defaultValue: 'Tab',
+        action: 'tab',
         shiftValue: null,
         translates: null
     },
     {
-        id: 15,
+        id: 81,
         classNames: ['key', 'letter'],
         defaultValue: 'q',
         shiftValue: 'Q',
@@ -152,7 +154,7 @@ const keys = [
         }
     },
     {
-        id: 16,
+        id: 87,
         classNames: ['key', 'letter'],
         defaultValue: 'w',
         shiftValue: 'W',
@@ -164,7 +166,7 @@ const keys = [
         }
     },
     {
-        id: 17,
+        id: 69,
         classNames: ['key', 'letter'],
         defaultValue: 'e',
         shiftValue: 'E',
@@ -176,7 +178,7 @@ const keys = [
         }
     },
     {
-        id: 18,
+        id: 82,
         classNames: ['key', 'letter'],
         defaultValue: 'r',
         shiftValue: 'R',
@@ -188,7 +190,7 @@ const keys = [
         }
     },
     {
-        id: 19,
+        id: 84,
         classNames: ['key', 'letter'],
         defaultValue: 't',
         shiftValue: 'T',
@@ -200,7 +202,7 @@ const keys = [
         }
     },
     {
-        id: 20,
+        id: 89,
         classNames: ['key', 'letter'],
         defaultValue: 'y',
         shiftValue: 'Y',
@@ -212,7 +214,7 @@ const keys = [
         }
     },
     {
-        id: 21,
+        id: 85,
         classNames: ['key', 'letter'],
         defaultValue: 'u',
         shiftValue: 'U',
@@ -224,7 +226,7 @@ const keys = [
         }
     },
     {
-        id: 22,
+        id: 73,
         classNames: ['key', 'letter'],
         defaultValue: 'i',
         shiftValue: 'I',
@@ -236,7 +238,7 @@ const keys = [
         }
     },
     {
-        id: 23,
+        id: 79,
         classNames: ['key', 'letter'],
         defaultValue: 'o',
         shiftValue: 'O',
@@ -248,7 +250,7 @@ const keys = [
         }
     },
     {
-        id: 24,
+        id: 80,
         classNames: ['key', 'letter'],
         defaultValue: 'p',
         shiftValue: 'P',
@@ -260,7 +262,7 @@ const keys = [
         }
     },
     {
-        id: 25,
+        id: 219,
         classNames: ['key', 'letter'],
         defaultValue: '[',
         shiftValue: '{',
@@ -272,7 +274,7 @@ const keys = [
         }
     },
     {
-        id: 26,
+        id: 221,
         classNames: ['key', 'letter'],
         defaultValue: ']',
         shiftValue: '}',
@@ -284,7 +286,7 @@ const keys = [
         }
     },
     {
-        id: 27,
+        id: 220,
         classNames: ['key', 'letter'],
         defaultValue: '\\',
         shiftValue: '|',
@@ -296,21 +298,22 @@ const keys = [
         }
     },
     {
-        id: 28,
+        id: 46,
         classNames: ['key', 'delete'],
         defaultValue: 'Del',
         shiftValue: null,
         translates: null
     },
     {
-        id: 29,
+        id: 20,
         classNames: ['key', 'capsLock'],
         defaultValue: 'CapsLock',
+        action: 'capsLock',
         shiftValue: null,
         translates: null
     },
     {
-        id: 30,
+        id: 65,
         classNames: ['key', 'letter'],
         defaultValue: 'a',
         shiftValue: 'A',
@@ -322,7 +325,7 @@ const keys = [
         }
     },
     {
-        id: 31,
+        id: 83,
         classNames: ['key', 'letter'],
         defaultValue: 's',
         shiftValue: 'S',
@@ -334,7 +337,7 @@ const keys = [
         }
     },
     {
-        id: 32,
+        id: 68,
         classNames: ['key', 'letter'],
         defaultValue: 'd',
         shiftValue: 'D',
@@ -346,7 +349,7 @@ const keys = [
         }
     },
     {
-        id: 33,
+        id: 70,
         classNames: ['key', 'letter'],
         defaultValue: 'f',
         shiftValue: 'F',
@@ -358,7 +361,7 @@ const keys = [
         }
     },
     {
-        id: 34,
+        id: 71,
         classNames: ['key', 'letter'],
         defaultValue: 'g',
         shiftValue: 'G',
@@ -370,7 +373,7 @@ const keys = [
         }
     },
     {
-        id: 35,
+        id: 72,
         classNames: ['key', 'letter'],
         defaultValue: 'h',
         shiftValue: 'H',
@@ -382,7 +385,7 @@ const keys = [
         }
     },
     {
-        id: 36,
+        id: 74,
         classNames: ['key', 'letter'],
         defaultValue: 'j',
         shiftValue: 'J',
@@ -394,7 +397,7 @@ const keys = [
         }
     },
     {
-        id: 37,
+        id: 75,
         classNames: ['key', 'letter'],
         defaultValue: 'k',
         shiftValue: 'K',
@@ -406,7 +409,7 @@ const keys = [
         }
     },
     {
-        id: 38,
+        id: 76,
         classNames: ['key', 'letter'],
         defaultValue: 'l',
         shiftValue: 'l',
@@ -418,7 +421,7 @@ const keys = [
         }
     },
     {
-        id: 39,
+        id: 186,
         classNames: ['key', 'letter'],
         defaultValue: ';',
         shiftValue: ':',
@@ -430,7 +433,7 @@ const keys = [
         }
     },
     {
-        id: 40,
+        id: 222,
         classNames: ['key', 'letter'],
         defaultValue: '\'',
         shiftValue: '"',
@@ -442,21 +445,23 @@ const keys = [
         }
     },
     {
-        id: 41,
+        id: 13,
         classNames: ['key', 'enter'],
         defaultValue: 'Enter',
+        action: 'enter',
         shiftValue: null,
         translates: null
     },
     {
-        id: 42,
+        id: 16,
         classNames: ['key', 'shift'],
         defaultValue: 'Shift',
+        action: 'shift',
         shiftValue: null,
         translates: null
     },
     {
-        id: 43,
+        id: 90,
         classNames: ['key', 'letter'],
         defaultValue: 'z',
         shiftValue: 'Z',
@@ -468,7 +473,7 @@ const keys = [
         }
     },
     {
-        id: 44,
+        id: 88,
         classNames: ['key', 'letter'],
         defaultValue: 'x',
         shiftValue: 'X',
@@ -480,7 +485,7 @@ const keys = [
         }
     },
     {
-        id: 45,
+        id: 67,
         classNames: ['key', 'letter'],
         defaultValue: 'c',
         shiftValue: 'C',
@@ -492,7 +497,7 @@ const keys = [
         }
     },
     {
-        id: 46,
+        id: 86,
         classNames: ['key', 'letter'],
         defaultValue: 'v',
         shiftValue: 'V',
@@ -504,7 +509,7 @@ const keys = [
         }
     },
     {
-        id: 47,
+        id: 66,
         classNames: ['key', 'letter'],
         defaultValue: 'b',
         shiftValue: 'B',
@@ -516,7 +521,7 @@ const keys = [
         }
     },
     {
-        id: 48,
+        id: 78,
         classNames: ['key', 'letter'],
         defaultValue: 'n',
         shiftValue: 'N',
@@ -528,7 +533,7 @@ const keys = [
         }
     },
     {
-        id: 49,
+        id: 77,
         classNames: ['key', 'letter'],
         defaultValue: 'm',
         shiftValue: 'M',
@@ -540,113 +545,112 @@ const keys = [
         }
     },
     {
-        id: 50,
+        id: 188,
         classNames: ['key', 'letter'],
         defaultValue: ',',
         shiftValue: '<',
         translates: {
             ru: {
-                defaultValue: 'с',
-                shiftValue: 'С',
+                defaultValue: 'б',
+                shiftValue: 'Б',
             }
         }
     },
     {
-        id: 51,
+        id: 190,
         classNames: ['key', 'letter'],
         defaultValue: '.',
         shiftValue: '>',
         translates: {
             ru: {
-                defaultValue: 'с',
-                shiftValue: 'С',
+                defaultValue: 'ю',
+                shiftValue: 'Ю',
             }
         }
     },
     {
-        id: 52,
+        id: 191,
         classNames: ['key', 'letter'],
         defaultValue: '/',
         shiftValue: '?',
-        translates: {
-            ru: {
-                defaultValue: 'с',
-                shiftValue: 'С',
-            }
-        }
+        translates: null
     },
     {
-        id: 53,
+        id: 38,
         classNames: ['key', 'arrow'],
         defaultValue: '△',
         shiftValue: null,
         translates: null
     },
     {
-        id: 54,
+        id: 16,
         classNames: ['key', 'shift2'],
         defaultValue: 'Shift',
+        action: 'shift',
         shiftValue: null,
         translates: null
     },
     {
-        id: 55,
+        id: 93,
         classNames: ['key', 'control'],
         defaultValue: 'Control',
         shiftValue: null,
         translates: null
     },
     {
-        id: 56,
+        id: 18,
         classNames: ['key', 'option'],
+        action: 'option',
         defaultValue: 'Option',
         shiftValue: null,
         translates: null
     },
     {
-        id: 57,
+        id: 17,
         classNames: ['key', 'command'],
         defaultValue: 'Command',
+        action: 'command',
         shiftValue: null,
         translates: null
     },
     {
-        id: 58,
+        id: 32,
         classNames: ['key', 'space'],
-        defaultValue: '',
+        defaultValue: ' ',
+        action: 'space',
         shiftValue: null,
         translates: null
     },
     {
-        id: 59,
+        id: 17,
         classNames: ['key', 'command'],
         defaultValue: 'Command',
         shiftValue: null,
         translates: null
     },
     {
-        id: 60,
+        id: 18,
         classNames: ['key', 'control'],
         defaultValue: 'Control',
         shiftValue: null,
         translates: null
     },
     {
-        id: 61,
+        id: 37,
         classNames: ['key', 'arrow'],
         defaultValue: '◁',
         shiftValue: null,
         translates: null
     },
     {
-        id: 62,
+        id: 40,
         classNames: ['key', 'arrow'],
         defaultValue: '▽',
         shiftValue: null,
         translates: null
     },
     {
-        id: 63,
+        id: 39,
         classNames: ['key', 'arrow'],
         defaultValue: '▷',
         shiftValue: null,
