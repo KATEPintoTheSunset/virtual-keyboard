@@ -10,7 +10,7 @@
     width: 1000px; 
     height: 500px;
     font-size: 20px;
-    font-family: fantasy;
+    font-family: Comic Sans MS, Comic Sans, cursive;
     background-color: lightcyan;  
     color: lightslategray;
     border-radius: 15px;
@@ -45,7 +45,7 @@
     color: lightslategray;
     background-color: lightcyan;
     font-size: 20px;
-    font-family: fantasy;
+    font-family: Comic Sans MS, Comic Sans, cursive;
     border-color: lightslategray;
     box-shadow: 0 0 5px rgba(119, 136, 153, 0.7);
 
@@ -76,7 +76,7 @@
 }
 
 
-.down, .on {
+.down{
     background-color:powderblue;   
     transition: 0.25;
 }
@@ -84,4 +84,14 @@
 textarea {
     outline: none;
 	-moz-appearance: none;
+}
+
+label {
+    font-size: 20px;
+    color: lightslategray;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+body {
+    text-align: center;
 }

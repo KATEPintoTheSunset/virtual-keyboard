@@ -29,10 +29,12 @@ const enableShift = () => {
 };
 
 const enableCapsLock = () => {
+    document.getElementById(20).classList.add('down');
     localStorage.setItem('caps', 'true');
 };
 
 const disableCapsLock = () => {
+    document.getElementById(20).classList.remove('down');
     localStorage.removeItem('caps');
 };
 

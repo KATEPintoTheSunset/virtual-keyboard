@@ -34,10 +34,10 @@ export default function addKeysCallback(keysContainer, inputStorage) {
         key.addEventListener('click', () => {
             switch (keyObject.action) {
                 case 'option':
-                case 'delete':
                 case 'control':
                     break;
                 case 'backspace':
+                case 'delete':
                     backspaceAction(inputStorage);
                     break;
                 case 'tab':
@@ -54,7 +54,11 @@ export default function addKeysCallback(keysContainer, inputStorage) {
                     isShiftActive() ? drawUppercase(keysContainer) : drawLowercase(keysContainer);
                     break;
                 }
-                case 'command':
+                case 'command': {
+                    add2CommandsSequence(keyObject.action);
+                    doAction(checkSequnce(getCommandsSequence()), keysContainer);
+                    break;
+                }
                 case 'space': {
                     add2CommandsSequence(keyObject.action);
                     doAction(checkSequnce(getCommandsSequence()), keysContainer);
