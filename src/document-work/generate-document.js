@@ -1,0 +1,54 @@
+import elementFactory from './common/index';
+import addKeysCallback from './keys/gen-keys/add-keys';
+import { getLanguage, setLanguage } from './states';
+
+function genInputSection(inputContainer) {
+    const inputStorage = elementFactory('textarea', ['user-input-storage']);
+    inputStorage.readOnly = true;
+    inputContainer.appendChild(inputStorage);
+    return inputStorage;
+}
+
+function genKeysSection(keysContainer) {
+    const keysSection = elementFactory('div', ['keys-section']);
+    keysContainer.appendChild(keysSection);
+    return keysSection;
+}
+
+function initLanguage() {
+    const lang = getLanguage();
+    if (!lang) {
+        setLanguage('en');
+    }
+}
+
+function genDoc() {
+    initLanguage();
+
+    const keysContainer = elementFactory('div', ['keys-container']);
+    const labelInfo = elementFactory('label', ['label-info'], 'label');
+    const inputContainer = elementFactory('div', ['user-input-container']);
+
+    const inputStorage = genInputSection(inputContainer);
+    const keysSection = genKeysSection(keysContainer);
+    addKeysCallback(keysSection, inputStorage);
+
+    document.body.appendChild(inputContainer);
+    document.body.appendChild(labelInfo);
+    document.body.appendChild(keysContainer);
+
+    document.getElementById('label').innerHTML = 'Последовательно для смены языка: command => space';
+
+    document.addEventListener('keydown', (event) => {
+        document.getElementById(`${event.keyCode}`).classList.add('down');
+        document.getElementById(`${event.keyCode}`).click();
+    });
+    document.addEventListener('keyup', (event) => {
+        if (event.keyCode === 20) {
+            document.getElementById(20).click();
+        }
+        document.getElementById(`${event.keyCode}`).classList.remove('down');
+    });
+}
+
+export default genDoc;

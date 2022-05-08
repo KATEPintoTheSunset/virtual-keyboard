@@ -1,0 +1,32 @@
+{
+  "name": "virtual-keyboard",
+  "version": "1.0.0",
+  "description": "RSSchool task",
+  "main": "index.js",
+  "scripts": {
+    "eslint:test": "eslint src/**",
+    "eslint:fix": "eslint src/** --fix",
+    "build": "webpack --mode development",
+    "start:dev": "webpack-dev-server --mode development --open",
+    "pretty": "prettier --write ./src/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KATEPintoTheSunset/virtual-keyboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KATEPintoTheSunset/virtual-keyboard/issues"
+  },
+  "homepage": "https://github.com/KATEPintoTheSunset/virtual-keyboard#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.6.2",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  }
+}
