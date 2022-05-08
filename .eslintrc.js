@@ -11,5 +11,9 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    "no-param-reassign": 0,
+    indent: 0,
+    "no-fallthrough": 0,
+    "no-unused-expressions": [2, { allowTernary: true }]
   },
 };

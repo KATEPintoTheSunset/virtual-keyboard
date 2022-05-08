@@ -1,13 +1,13 @@
-import { getLanguage } from '../../states'
-import { keys } from './keys';
+import { getLanguage } from '../../states';
+import keys from './keys';
 
-function drawUppercase(keysContainer){
+function drawUppercase(keysContainer) {
     const lang = getLanguage();
     keysContainer.childNodes.forEach((child, index) => {
         const keyOrigin = keys[index];
         let newKeyValue = null;
 
-        if(lang === 'ru' && keyOrigin.translates && keyOrigin.translates.ru.shiftValue){
+        if (lang === 'ru' && keyOrigin.translates && keyOrigin.translates.ru.shiftValue) {
             newKeyValue = keyOrigin.translates.ru.shiftValue;
         } else {
             newKeyValue = keyOrigin.shiftValue || keyOrigin.defaultValue;
@@ -16,13 +16,13 @@ function drawUppercase(keysContainer){
     });
 }
 
-function drawLowercase(keysContainer){
+function drawLowercase(keysContainer) {
     const lang = getLanguage();
     keysContainer.childNodes.forEach((child, index) => {
         const keyOrigin = keys[index];
         let newKeyValue = null;
 
-        if(lang === 'ru' && keyOrigin.translates){
+        if (lang === 'ru' && keyOrigin.translates) {
             newKeyValue = keyOrigin.translates.ru.defaultValue;
         } else {
             newKeyValue = keyOrigin.defaultValue;
@@ -31,7 +31,4 @@ function drawLowercase(keysContainer){
     });
 }
 
-export {
-    drawLowercase,
-    drawUppercase
-}
+export { drawLowercase, drawUppercase };

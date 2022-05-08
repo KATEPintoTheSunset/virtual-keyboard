@@ -1,3 +1,3 @@
-export default function tabAction(inputStorage){
-    inputStorage.value += '    '
+export default function tabAction(inputStorage) {
+    inputStorage.value += '    ';
 }

@@ -1,17 +1,17 @@
-const keys = [
+export default [
     {
         id: 192,
         classNames: ['key', 'tild'],
         defaultValue: '`',
         shiftValue: '~',
-        translates: null
+        translates: null,
     },
     {
         id: 49,
         classNames: ['key', 'number'],
         defaultValue: '1',
         shiftValue: '!',
-        translates: null
+        translates: null,
     },
     {
         id: 50,
@@ -22,8 +22,8 @@ const keys = [
             ru: {
                 defaultValue: '2',
                 shiftValue: '"',
-            }
-        }
+            },
+        },
     },
     {
         id: 51,
@@ -34,8 +34,8 @@ const keys = [
             ru: {
                 defaultValue: '3',
                 shiftValue: '№',
-            }
-        }
+            },
+        },
     },
     {
         id: 52,
@@ -46,8 +46,8 @@ const keys = [
             ru: {
                 defaultValue: '4',
                 shiftValue: '%',
-            }
-        }
+            },
+        },
     },
     {
         id: 53,
@@ -58,8 +58,8 @@ const keys = [
             ru: {
                 defaultValue: '5',
                 shiftValue: ':',
-            }
-        }
+            },
+        },
     },
     {
         id: 54,
@@ -70,8 +70,8 @@ const keys = [
             ru: {
                 defaultValue: '6',
                 shiftValue: ',',
-            }
-        }
+            },
+        },
     },
     {
         id: 55,
@@ -82,8 +82,8 @@ const keys = [
             ru: {
                 defaultValue: '7',
                 shiftValue: '.',
-            }
-        }
+            },
+        },
     },
     {
         id: 56,
@@ -94,36 +94,36 @@ const keys = [
             ru: {
                 defaultValue: '8',
                 shiftValue: ';',
-            }
-        }
+            },
+        },
     },
     {
         id: 57,
         classNames: ['key', 'number'],
         defaultValue: '9',
         shiftValue: '(',
-        translates: null
+        translates: null,
     },
     {
         id: 48,
         classNames: ['key', 'number'],
         defaultValue: '0',
         shiftValue: '(',
-        translates: null
+        translates: null,
     },
     {
         id: 189,
         classNames: ['key', 'number'],
         defaultValue: '-',
         shiftValue: '_',
-        translates: null
+        translates: null,
     },
     {
         id: 187,
         classNames: ['key', 'number'],
         defaultValue: '=',
         shiftValue: '+',
-        translates: null
+        translates: null,
     },
     {
         id: 8,
@@ -131,7 +131,7 @@ const keys = [
         defaultValue: 'Backspace',
         action: 'backspace',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 9,
@@ -139,7 +139,7 @@ const keys = [
         defaultValue: 'Tab',
         action: 'tab',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 81,
@@ -150,8 +150,8 @@ const keys = [
             ru: {
                 defaultValue: 'й',
                 shiftValue: 'Й',
-            }
-        }
+            },
+        },
     },
     {
         id: 87,
@@ -162,8 +162,8 @@ const keys = [
             ru: {
                 defaultValue: 'ц',
                 shiftValue: 'Ц',
-            }
-        }
+            },
+        },
     },
     {
         id: 69,
@@ -174,8 +174,8 @@ const keys = [
             ru: {
                 defaultValue: 'у',
                 shiftValue: 'У',
-            }
-        }
+            },
+        },
     },
     {
         id: 82,
@@ -186,8 +186,8 @@ const keys = [
             ru: {
                 defaultValue: 'к',
                 shiftValue: 'К',
-            }
-        }
+            },
+        },
     },
     {
         id: 84,
@@ -198,8 +198,8 @@ const keys = [
             ru: {
                 defaultValue: 'е',
                 shiftValue: 'Е',
-            }
-        }
+            },
+        },
     },
     {
         id: 89,
@@ -210,8 +210,8 @@ const keys = [
             ru: {
                 defaultValue: 'н',
                 shiftValue: 'Н',
-            }
-        }
+            },
+        },
     },
     {
         id: 85,
@@ -222,8 +222,8 @@ const keys = [
             ru: {
                 defaultValue: 'г',
                 shiftValue: 'Г',
-            }
-        }
+            },
+        },
     },
     {
         id: 73,
@@ -234,8 +234,8 @@ const keys = [
             ru: {
                 defaultValue: 'ш',
                 shiftValue: 'Ш',
-            }
-        }
+            },
+        },
     },
     {
         id: 79,
@@ -246,8 +246,8 @@ const keys = [
             ru: {
                 defaultValue: 'щ',
                 shiftValue: 'Щ',
-            }
-        }
+            },
+        },
     },
     {
         id: 80,
@@ -258,8 +258,8 @@ const keys = [
             ru: {
                 defaultValue: 'з',
                 shiftValue: 'З',
-            }
-        }
+            },
+        },
     },
     {
         id: 219,
@@ -270,8 +270,8 @@ const keys = [
             ru: {
                 defaultValue: 'х',
                 shiftValue: 'х',
-            }
-        }
+            },
+        },
     },
     {
         id: 221,
@@ -282,8 +282,8 @@ const keys = [
             ru: {
                 defaultValue: 'ъ',
                 shiftValue: 'Ъ',
-            }
-        }
+            },
+        },
     },
     {
         id: 220,
@@ -294,15 +294,15 @@ const keys = [
             ru: {
                 defaultValue: 'ё',
                 shiftValue: 'Ё',
-            }
-        }
+            },
+        },
     },
     {
         id: 46,
         classNames: ['key', 'delete'],
         defaultValue: 'Del',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 20,
@@ -310,7 +310,7 @@ const keys = [
         defaultValue: 'CapsLock',
         action: 'capsLock',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 65,
@@ -321,8 +321,8 @@ const keys = [
             ru: {
                 defaultValue: 'ф',
                 shiftValue: 'Ф',
-            }
-        }
+            },
+        },
     },
     {
         id: 83,
@@ -333,8 +333,8 @@ const keys = [
             ru: {
                 defaultValue: 'ы',
                 shiftValue: 'Ы',
-            }
-        }
+            },
+        },
     },
     {
         id: 68,
@@ -345,8 +345,8 @@ const keys = [
             ru: {
                 defaultValue: 'в',
                 shiftValue: 'В',
-            }
-        }
+            },
+        },
     },
     {
         id: 70,
@@ -357,8 +357,8 @@ const keys = [
             ru: {
                 defaultValue: 'а',
                 shiftValue: 'А',
-            }
-        }
+            },
+        },
     },
     {
         id: 71,
@@ -369,8 +369,8 @@ const keys = [
             ru: {
                 defaultValue: 'п',
                 shiftValue: 'П',
-            }
-        }
+            },
+        },
     },
     {
         id: 72,
@@ -381,8 +381,8 @@ const keys = [
             ru: {
                 defaultValue: 'р',
                 shiftValue: 'Р',
-            }
-        }
+            },
+        },
     },
     {
         id: 74,
@@ -393,8 +393,8 @@ const keys = [
             ru: {
                 defaultValue: 'о',
                 shiftValue: 'О',
-            }
-        }
+            },
+        },
     },
     {
         id: 75,
@@ -405,8 +405,8 @@ const keys = [
             ru: {
                 defaultValue: 'л',
                 shiftValue: 'Л',
-            }
-        }
+            },
+        },
     },
     {
         id: 76,
@@ -417,8 +417,8 @@ const keys = [
             ru: {
                 defaultValue: 'д',
                 shiftValue: 'Д',
-            }
-        }
+            },
+        },
     },
     {
         id: 186,
@@ -429,20 +429,20 @@ const keys = [
             ru: {
                 defaultValue: 'ж',
                 shiftValue: 'Ж',
-            }
-        }
+            },
+        },
     },
     {
         id: 222,
         classNames: ['key', 'letter'],
-        defaultValue: '\'',
+        defaultValue: "'",
         shiftValue: '"',
         translates: {
             ru: {
                 defaultValue: 'э',
                 shiftValue: 'Э',
-            }
-        }
+            },
+        },
     },
     {
         id: 13,
@@ -450,7 +450,7 @@ const keys = [
         defaultValue: 'Enter',
         action: 'enter',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 16,
@@ -458,7 +458,7 @@ const keys = [
         defaultValue: 'Shift',
         action: 'shift',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 90,
@@ -469,8 +469,8 @@ const keys = [
             ru: {
                 defaultValue: 'я',
                 shiftValue: 'Я',
-            }
-        }
+            },
+        },
     },
     {
         id: 88,
@@ -481,8 +481,8 @@ const keys = [
             ru: {
                 defaultValue: 'ч',
                 shiftValue: 'Ч',
-            }
-        }
+            },
+        },
     },
     {
         id: 67,
@@ -493,8 +493,8 @@ const keys = [
             ru: {
                 defaultValue: 'с',
                 shiftValue: 'С',
-            }
-        }
+            },
+        },
     },
     {
         id: 86,
@@ -505,8 +505,8 @@ const keys = [
             ru: {
                 defaultValue: 'м',
                 shiftValue: 'М',
-            }
-        }
+            },
+        },
     },
     {
         id: 66,
@@ -517,8 +517,8 @@ const keys = [
             ru: {
                 defaultValue: 'и',
                 shiftValue: 'И',
-            }
-        }
+            },
+        },
     },
     {
         id: 78,
@@ -529,8 +529,8 @@ const keys = [
             ru: {
                 defaultValue: 'т',
                 shiftValue: 'Т',
-            }
-        }
+            },
+        },
     },
     {
         id: 77,
@@ -541,8 +541,8 @@ const keys = [
             ru: {
                 defaultValue: 'ь',
                 shiftValue: 'Ь',
-            }
-        }
+            },
+        },
     },
     {
         id: 188,
@@ -553,8 +553,8 @@ const keys = [
             ru: {
                 defaultValue: 'б',
                 shiftValue: 'Б',
-            }
-        }
+            },
+        },
     },
     {
         id: 190,
@@ -565,22 +565,22 @@ const keys = [
             ru: {
                 defaultValue: 'ю',
                 shiftValue: 'Ю',
-            }
-        }
+            },
+        },
     },
     {
         id: 191,
         classNames: ['key', 'letter'],
         defaultValue: '/',
         shiftValue: '?',
-        translates: null
+        translates: null,
     },
     {
         id: 38,
         classNames: ['key', 'arrow'],
         defaultValue: '△',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 16,
@@ -588,14 +588,14 @@ const keys = [
         defaultValue: 'Shift',
         action: 'shift',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 93,
         classNames: ['key', 'control'],
         defaultValue: 'Control',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 18,
@@ -603,7 +603,7 @@ const keys = [
         action: 'option',
         defaultValue: 'Option',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 17,
@@ -611,7 +611,7 @@ const keys = [
         defaultValue: 'Command',
         action: 'command',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 32,
@@ -619,46 +619,41 @@ const keys = [
         defaultValue: ' ',
         action: 'space',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 17,
         classNames: ['key', 'command'],
         defaultValue: 'Command',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 18,
         classNames: ['key', 'control'],
         defaultValue: 'Control',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 37,
         classNames: ['key', 'arrow'],
         defaultValue: '◁',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 40,
         classNames: ['key', 'arrow'],
         defaultValue: '▽',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
     {
         id: 39,
         classNames: ['key', 'arrow'],
         defaultValue: '▷',
         shiftValue: null,
-        translates: null
+        translates: null,
     },
-    
 ];
-
-export {
-    keys
-}

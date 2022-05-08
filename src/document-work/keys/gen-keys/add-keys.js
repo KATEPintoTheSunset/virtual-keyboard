@@ -1,20 +1,30 @@
-import { elementFactory } from '../../common';
-import { keys } from './keys';
+import elementFactory from '../../common';
+import keys from './keys';
 import backspaceAction from '../action-keys/backspace';
 import tabAction from '../action-keys/tab';
 import enterAction from '../action-keys/enter';
-import { isShiftActive, disableShift, enableShift, isCapsLockActive, enableCapsLock, disableCapsLock, add2CommandsSequence, getCommandsSequence, getLanguage } from '../../states';
+import {
+    isShiftActive,
+    disableShift,
+    enableShift,
+    isCapsLockActive,
+    enableCapsLock,
+    disableCapsLock,
+    add2CommandsSequence,
+    getCommandsSequence,
+    getLanguage,
+} from '../../states';
 import checkSequnce from '../action-keys/check-command-sequnce';
 import doAction from '../action-keys/do-specific-action';
 import { drawLowercase, drawUppercase } from './re-draw-shift-keys';
 
-function addKeysCallback(keysContainer, inputStorage){
-    keys.forEach(keyObject => {
+export default function addKeysCallback(keysContainer, inputStorage) {
+    keys.forEach((keyObject) => {
         const key = elementFactory('button', keyObject.classNames, keyObject.id);
         let keyValue = null;
-        const lang = getLanguage();
+        const initLang = getLanguage();
 
-        if(lang === 'ru' && keyObject.translates){
+        if (initLang === 'ru' && keyObject.translates) {
             keyValue = keyObject.translates.ru.defaultValue;
         } else {
             keyValue = keyObject.defaultValue;
@@ -22,8 +32,9 @@ function addKeysCallback(keysContainer, inputStorage){
         key.innerHTML = keyValue;
         keysContainer.appendChild(key);
         key.addEventListener('click', () => {
-            switch(keyObject.action){
-                case 'option': case 'delete':
+            switch (keyObject.action) {
+                case 'option':
+                case 'delete':
                     break;
                 case 'backspace':
                     backspaceAction(inputStorage);
@@ -37,25 +48,30 @@ function addKeysCallback(keysContainer, inputStorage){
                 case 'capsLock':
                     isCapsLockActive() ? disableCapsLock() : enableCapsLock();
                     break;
-                case 'shift':
+                case 'shift': {
                     isShiftActive() ? disableShift() : enableShift();
                     isShiftActive() ? drawUppercase(keysContainer) : drawLowercase(keysContainer);
-                case 'command': case 'control':
+                    break;
+                }
+                case 'command':
+                case 'control': {
                     add2CommandsSequence(keyObject.action);
                     doAction(checkSequnce(getCommandsSequence()), keysContainer);
                     break;
-                case 'space': 
+                }
+                case 'space': {
                     add2CommandsSequence(keyObject.action);
                     doAction(checkSequnce(getCommandsSequence()), keysContainer);
-                default:
+                }
+                default: {
                     let input = null;
                     const lang = getLanguage();
-                    if(lang === 'ru' && keyObject.translates){
+                    if (lang === 'ru' && keyObject.translates) {
                         input = keyObject.translates.ru.defaultValue;
-                        if(isShiftActive() || isCapsLockActive()){
+                        if (isShiftActive() || isCapsLockActive()) {
                             input = input.toUpperCase();
-                            if(isShiftActive()){
-                                if(keyObject.translates.ru.shiftValue){
+                            if (isShiftActive()) {
+                                if (keyObject.translates.ru.shiftValue) {
                                     input = keyObject.translates.ru.shiftValue;
                                 }
                                 drawLowercase(keysContainer);
@@ -64,10 +80,10 @@ function addKeysCallback(keysContainer, inputStorage){
                         }
                     } else {
                         input = keyObject.defaultValue;
-                        if(isShiftActive() || isCapsLockActive()){
+                        if (isShiftActive() || isCapsLockActive()) {
                             input = input.toUpperCase();
-                            if(isShiftActive()){
-                                if(keyObject.shiftValue){
+                            if (isShiftActive()) {
+                                if (keyObject.shiftValue) {
                                     input = keyObject.shiftValue;
                                 }
                                 drawLowercase(keysContainer);
@@ -77,11 +93,8 @@ function addKeysCallback(keysContainer, inputStorage){
                     }
                     inputStorage.value += input;
                     break;
+                }
             }
-        })
-    })
-}
-
-export {
-    addKeysCallback
+        });
+    });
 }
